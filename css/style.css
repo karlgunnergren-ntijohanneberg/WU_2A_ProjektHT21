@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: border-box;
+}
+
+/* STARTSIDA */
+
+#wrapper {
+    width: 100vw;
+    background-color: rgb(207, 224, 196);
+    display: grid;
+    grid-template-rows: 600px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "he he he"
+    "oo oo oo"
+    ;
+}
+
+#om_oss {
+    grid-area: oo;
+    display: flex;
+    color: black;
+    justify-content: center ;
+    align-items: center;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+#header {
+    grid-area: he;
+    display: grid;
+    grid-template-rows: 50px 550px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "lg tp" 
+    "lg av";
+    background-image: url(/img/startsidaslate.jpg)   ;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+    #top {
+        grid-area: tp;
+        color: cadetblue;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: rgb(207, 224, 196);
+        font-size: 1.80rem;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 2px;
+        font-weight: bold;
+        margin-left: 50vw;
+    }
+
+    .links {
+        text-decoration: none;
+        color: rgb(207, 224, 196);
+    }
+
+    .links:hover{
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(157, 170, 148);;
+    }
+
+    #logga {
+        grid-area: lg;
+        background-image: url(/img/Las\ Paltas\ logga.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 50px;
+    }
+
+    #avokado {
+        grid-area: av;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        color:  rgb(207, 224, 196);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        margin-right: 250px;
+    }
+
+    /* MENY */
+
+#wrapper_meny {
+    width: 100vw;
+    background-color: rgb(207, 224, 196);
+    display: grid;
+    grid-template-rows: 1500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "h2 h2 h2"
+}
+
+#header_meny {
+    grid-area: h2;
+    background-image: url(/img/menybakgrund2.png);
+    background-size: 100%;
+    background-position: top;
+    display: grid;
+    grid-template-rows: 50px 550px 900px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "lg mt"
+    "lg mm"
+    "mb mb"
+}
+
+#meny_top {
+    grid-area: mt;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(207, 224, 196);
+    font-size: 1.80rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 2px;
+    font-weight: bold;
+    margin-left: 50vw;
+}
+
+#meny_text {
+    grid-area: mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color:  rgb(207, 224, 196);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-right: 250px;
+}
+
+#meny_bilder {
+    grid-area: mb;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "1b 1t"
+    "2b 2t"
+    "3b 3t";
+}

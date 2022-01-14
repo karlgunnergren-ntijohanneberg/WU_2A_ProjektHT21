@@ -9,10 +9,9 @@
 /* STARTSIDA */
 
 #wrapper {
-    width: 100vw;
     background-color: rgb(207, 224, 196);
     display: grid;
-    grid-template-rows: 600px 300px;
+    grid-template-rows: 37.5rem 18.75rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "he he he"
@@ -33,7 +32,7 @@
 #header {
     grid-area: he;
     display: grid;
-    grid-template-rows: 50px 550px;
+    grid-template-rows: 3.125rem 34.375rem;
     grid-template-columns: 1fr 4fr;
     grid-template-areas:
     "lg tp" 
@@ -52,7 +51,7 @@
         color: rgb(207, 224, 196);
         font-size: 1.80rem;
         font-family: 'Josefin Sans', sans-serif;
-        margin: 2px;
+        margin: 0.125rem;
         font-weight: bold;
         margin-left: 50vw;
     }
@@ -73,7 +72,7 @@
         background-image: url(/img/Las\ Paltas\ logga.png);
         background-size: 100%;
         background-repeat: no-repeat;
-        margin: 50px;
+        margin: 3.125rem;
     }
 
     #avokado {
@@ -85,19 +84,18 @@
         color:  rgb(207, 224, 196);
         font-family: 'Josefin Sans', sans-serif;
         font-weight: bold;
-        margin-right: 250px;
+        margin-right: 15.625rem;
     }
 
     /* MENY */
 
 #wrapper_meny {
-    width: 100vw;
     background-color: rgb(207, 224, 196);
     display: grid;
-    grid-template-rows: 1500px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 112.5rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "h2 h2 h2"
+    "h2 h2"
 }
 
 #header_meny {
@@ -106,7 +104,7 @@
     background-size: 100%;
     background-position: top;
     display: grid;
-    grid-template-rows: 50px 550px 900px;
+    grid-template-rows: 3.125rem 34.375rem 56.25rem;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: 
     "lg mt"
@@ -122,7 +120,7 @@
     color: rgb(207, 224, 196);
     font-size: 1.80rem;
     font-family: 'Josefin Sans', sans-serif;
-    margin: 2px;
+    margin: 0.125rem;
     font-weight: bold;
     margin-left: 50vw;
 }
@@ -136,7 +134,7 @@
     color:  rgb(207, 224, 196);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    margin-right: 250px;
+    margin-right: 15.625rem;
 }
 
 #meny_bilder {
@@ -146,6 +144,144 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "1b 1t"
-    "2b 2t"
+    "1t 2b"
     "3b 3t";
 }
+
+#matbild1 {
+    grid-area: 1b;
+    background-image: url(/img/Avokadomatbild1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mattext1{
+    display: flex;
+    grid-area: 1t;
+    background-color: rgb(207, 224, 196);
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+    #text1 {
+        margin: 5rem
+    }
+
+#matbild2 {
+    grid-area: 2b;
+    background-image: url(/img/Avokadomatbild2.jpg);
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#mattext2 {
+    display: flex;
+    grid-area: 2t;
+    background-color: rgb(207, 224, 196);
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+    #text2 {
+        margin: 5rem;
+    }
+
+#matbild3 {
+    grid-area: 3b;
+    background-image: url(/img/Avokadomatbild3.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#mattext3 {
+    display: flex;
+    grid-area: 3t;
+    background-color: rgb(207, 224, 196);   
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+    #text3 {
+        margin: 5rem;
+    }
+
+#wrapper_omoss {
+    width: 100%;
+    background-color: rgb(207, 224, 196);
+    display: grid;
+    grid-template-rows: 900px ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "ho ho" 
+}
+
+#header_omoss {   
+    grid-area: ho;
+    display: grid;
+    grid-template-rows: 3.125rem 34.375rem;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "lg ot" 
+    "lg om"
+    "kl kl";
+    background-image: url(/img/Omossbakgrund.jpg)   ;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#omoss_top {
+    grid-area: ot;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(207, 224, 196);
+    font-size: 1.80rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0.125rem;
+    font-weight: bold;
+    margin-left: 50vw;
+}
+
+#omoss_text {
+    grid-area: om;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color:  rgb(207, 224, 196);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-right: 15.625rem;
+}
+
+#kontaktlista {
+    display: grid;
+    grid-area: kl;
+    background-color: rgb(24, 23, 23);
+    grid-template-rows: 6rem;
+    grid-template-areas:
+    "kr"
+    "kl"
+}
+
+    #kl_rubrik {
+        grid-area: kr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(207, 224, 196); 
+        font-weight: bold;
+        font-size: 2.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    #kl_lista {
+        display: flex;
+        color: rgb(207, 224, 196);
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.75rem
+    }
